@@ -52,7 +52,7 @@ const productsData = [
 
 const Products = () => {
     return (
-        <div className='mt-20 mb-12'>
+        <div className='mt-5 mb-12'>
             <div className='container'>
                 {/*header section */}
                 <div className='text-center mb-10 max-w-[600px] mx-auto'>
@@ -77,7 +77,7 @@ const Products = () => {
                                 <img
                                     src={data.img}
                                     alt=""
-                                    className='h-[200px] w-[150px]'
+                                    className='h-[200px] w-[]'
                                 />
                                 <div className=''>
                                     <h3 className='font-semibold'>{data.title}</h3>

@@ -5,6 +5,8 @@ import Hero from './Components/Hero/Hero'
 import Products from './Components/Products/Products'
 import AOS from "aos";
 import "aos/dist/aos.css"
+import TopProduct from './Components/TopProducts/TopProduct'
+
 
 function App() {
   React.useEffect(() => {
@@ -22,6 +24,8 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <Products></Products>
+      <TopProduct></TopProduct>
+      
     </div>
   )
 }
