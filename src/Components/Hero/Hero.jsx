@@ -54,16 +54,31 @@ const Hero = () => {
                         <div key={data.id} className=''>
                             <div className=''>
                                 <div className='flex flex-col justify-center gap-4 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative'>
-                                    <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h1>
-                                    <p className='text-sm'>{data.description}</p>
+                                    <h1
+                                        data-aos="zoom-out"
+                                        data-aos-once="true"
+                                        data-aos-duration="500"
+                                        className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h1>
+                                    <p
+                                        data-aos="fade-up"
+                                        data-aos-duration="500"
+                                        data-aos-delay="100"
+                                        className='text-sm'>{data.description}</p>
                                 </div>
-                                <div>
+                                <div
+                                    data-aos="fade-up"
+                                    data-aos-duration="500"
+                                    data-aos-delay="300"
+                                >
                                     <button className='bg-gradient-to-r from-primary to-secondary px-4 py-2 rounded-full text-white hover:scale-105 duration-200 mt-3'>Order Now</button>
                                 </div>
                             </div>
-                            
+
                             <div className='order-1 sm:order-2'>
-                                <div className='relative z-10'>
+                                <div
+                                    data-aos="zoom-in"
+                                    data-aos-once="true"
+                                    className='relative z-10'>
                                     <img src={data.img} alt="" className='w-[500px] h-[450px] sm:h-[450px] sm:scale-125 object-contain mx-auto' />
                                 </div>
                             </div>
