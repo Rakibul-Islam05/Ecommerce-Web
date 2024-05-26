@@ -12,27 +12,27 @@ const Footer = () => {
     return (
         <div className=''>
             <footer className=" footer p-10 bg-neutral text-neutral-content">
-                <nav className='md:col-span-2 flex flex-col justify-center items-center'>
+                <nav data-aos="zoom-in" className='md:col-span-2 flex flex-col justify-center items-center'>
                     <div className='flex justify-center items-center gap-2'>
                         <img src={logo} alt="" className='h-20' />
                         <h1 className='text-2xl font-bold'>MegaMart</h1>
                     </div>
                     <p className='text-gray-300 w-5/6 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellendus tenetur saepe fugit asperiores aliquam.</p>
                 </nav>
-                <nav>
+                <nav data-aos="zoom-in">
                     <h6 className="footer-title">Important Links</h6>
                     <a className="link link-hover">About us</a>
                     <a className="link link-hover">Contact</a>
                     <a className="link link-hover">Jobs</a>
                     <a className="link link-hover">Press kit</a>
                 </nav>
-                <nav>
+                <nav data-aos="zoom-in">
                     <h6 className="footer-title">Links</h6>
                     <a className="link link-hover">Terms of use</a>
                     <a className="link link-hover">Privacy policy</a>
                     <a className="link link-hover">Cookie policy</a>
                 </nav>
-                <nav>
+                <nav data-aos="zoom-in">
                     <div className='flex gap-3 text-2xl'>
                         <FaInstagram />
                         <FaFacebook />

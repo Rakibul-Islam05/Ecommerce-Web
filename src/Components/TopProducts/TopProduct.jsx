@@ -29,7 +29,7 @@ const productsData = [
         description: "touch of urban to your home."
     }
 ];
-const TopProduct = () => {
+const TopProduct = ({handleOrderPopup}) => {
     return (
         <div>
             <div className="container">
@@ -47,7 +47,7 @@ const TopProduct = () => {
                     {
                         productsData.map((data) => (
                             <div
-                                className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 hover:text-white relative shadow-xl duration-300 group max-w[300px]'
+                                className='rounded-2xl bg-white dark:bg-gray-800 dark:hover:bg-primary/50 hover:bg-black/80 hover:text-white relative shadow-xl duration-300 group max-w[300px] mt-10'
                                 key={data.id}>
 
                                 {/**image section */}
@@ -73,7 +73,7 @@ const TopProduct = () => {
                                     >{data.description}
                                     </p>
                                     
-                                    <button className='bg-gradient-to-r from-primary to-secondary px-4 py-2 rounded-full text-white hover:scale-105 duration-200 mt-3'>Order Now</button>
+                                    <button className='bg-gradient-to-r from-primary to-secondary px-4 py-2 rounded-full text-white hover:scale-105 duration-200 mt-3' onClick={handleOrderPopup}>Order Now</button>
                                 
 
                                 </div>

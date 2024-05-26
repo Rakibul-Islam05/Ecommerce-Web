@@ -21,7 +21,7 @@ const DropdownLinks = [
 ];
 
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
     return (
         <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40'>
             {/*upper navbar*/}
@@ -49,7 +49,7 @@ const Navbar = () => {
                     </div>
 
                     {/*Order*/}
-                    <button onClick={() => alert("order not available yet")} className='bg-gradient-to-r from-primary to-secondary transition-all duration-300 px-4 py-1 rounded-full text-white flex items-center gap-3 group'>
+                    <button onClick={() => handleOrderPopup()} className='bg-gradient-to-r from-primary to-secondary transition-all duration-300 px-4 py-1 rounded-full text-white flex items-center gap-3 group'>
                         <span className='group-hover:block hidden transition-all'>Order</span>
                         <FaShoppingCart className='text-xl text-white drop-shadow-sm cursor-pointer' />
                     </button>
@@ -63,7 +63,7 @@ const Navbar = () => {
 
             {/*Lower navbar*/}
             <div className='flex justify-center'>
-                <ul className='sm:flex  items-center gap-5'>
+                <ul className='sm:flex hidden  items-center gap-5'>
                     {
                         menu.map((data) => (
                             <li key={data.id}>
@@ -86,8 +86,8 @@ const Navbar = () => {
                                     DropdownLinks.map((data) => (
                                         <li key={data.id}>
                                             <a
-                                            className='inline-block w-full rounded-md p-2 hover:bg-primary/30'
-                                            href={data.link}>{data.name}</a>
+                                                className='inline-block w-full rounded-md p-2 hover:bg-primary/30'
+                                                href={data.link}>{data.name}</a>
                                         </li>
                                     ))
                                 }
