@@ -77,7 +77,7 @@ const Products = () => {
                                 <img
                                     src={data.img}
                                     alt=""
-                                    className='h-[200px] w-[]'
+                                    className='h-[200px] w-[300px] '
                                 />
                                 <div className=''>
                                     <h3 className='font-semibold'>{data.title}</h3>
