@@ -11,6 +11,7 @@ import Subscribe from './Components/Subscribe/Subscribe'
 import Testimonials from './Components/Testimonials/Testimonials'
 import Footer from './Components/Footer/Footer'
 import Popup from './Components/Popup/Popup'
+import Maps from './Components/Maps/Maps'
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <Subscribe></Subscribe>
       <Products></Products>
       <Testimonials></Testimonials>
+      <Maps></Maps>
       <Footer></Footer>
       <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
