@@ -9,6 +9,7 @@ import TopProduct from './Components/TopProducts/TopProduct'
 import Banner from './Components/Banner/Banner'
 import Subscribe from './Components/Subscribe/Subscribe'
 import Testimonials from './Components/Testimonials/Testimonials'
+import Footer from './Components/Footer/Footer'
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Subscribe></Subscribe>
       <Products></Products>
       <Testimonials></Testimonials>
+      <Footer></Footer>
     </div>
   )
 }
