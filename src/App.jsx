@@ -8,6 +8,7 @@ import "aos/dist/aos.css"
 import TopProduct from './Components/TopProducts/TopProduct'
 import Banner from './Components/Banner/Banner'
 import Subscribe from './Components/Subscribe/Subscribe'
+import Testimonials from './Components/Testimonials/Testimonials'
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
       <TopProduct></TopProduct>
       <Banner></Banner>
       <Subscribe></Subscribe>
+      <Products></Products>
+      <Testimonials></Testimonials>
     </div>
   )
 }
